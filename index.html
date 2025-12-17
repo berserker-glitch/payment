@@ -3,93 +3,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Gateway - Scolink</title>
+    <title>Scolink - AI Content Creation Platform</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
 </head>
 <body>
     <div class="container">
+        <!-- Header -->
         <header class="header">
             <div class="logo">
-                <h1>Payment Gateway</h1>
-                <p class="subtitle">Secure payments for all Scolink services</p>
+                <h1>Scolink</h1>
+                <p class="subtitle">AI-Powered Content Creation for the Modern Creator</p>
             </div>
         </header>
 
-        <main class="main-content">
-            <!-- Project Selection -->
-            <section class="project-selection">
-                <h2>Select Your Service</h2>
-                <div class="project-grid">
-                    <div class="project-card" data-project="articlemaster">
-                        <div class="project-icon">📝</div>
-                        <h3>ArticleMaster</h3>
-                        <p>AI-powered article generation from YouTube videos</p>
-                        <span class="domain">articlealchemist.scolink.ink</span>
-                    </div>
-                    <div class="project-card" data-project="app">
-                        <div class="project-icon">🚀</div>
-                        <h3>Legacy App</h3>
-                        <p>Your previous application</p>
-                        <span class="domain">app.scolink.ink</span>
-                    </div>
-                    <div class="project-card coming-soon">
-                        <div class="project-icon">🔮</div>
-                        <h3>Future Projects</h3>
-                        <p>Coming soon...</p>
-                        <span class="domain">*.scolink.ink</span>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Transform YouTube Videos into <span class="highlight">Engaging Articles</span></h1>
+                <p>Generate high-quality, SEO-optimized articles from YouTube videos in seconds. Perfect for content creators, marketers, and businesses looking to expand their online presence.</p>
+                <div class="hero-buttons">
+                    <a href="pricing.html" class="cta-button primary">View Pricing</a>
+                    <a href="payment/?project=articlemaster" class="cta-button secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="mockup">
+                    <div class="screen">
+                        <div class="content-preview">
+                            <h3>🎥 Video to Article</h3>
+                            <p>Transform any YouTube video into a comprehensive, well-structured article with AI-powered analysis.</p>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Plan Selection -->
-            <section class="plan-selection" id="planSelection" style="display: none;">
-                <h2 id="planTitle">Choose Your Plan</h2>
-                <div class="plan-grid" id="planGrid">
-                    <!-- Plans will be populated by JavaScript -->
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Why Choose Scolink?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Generate complete articles in under 60 seconds from any YouTube video.</p>
                 </div>
-                <button class="back-btn" onclick="showProjectSelection()">← Back to Services</button>
-            </section>
-
-            <!-- Payment Status -->
-            <section class="payment-status" id="paymentStatus" style="display: none;">
-                <div class="status-content">
-                    <h2>Processing Payment...</h2>
-                    <div class="spinner"></div>
-                    <p>Please complete your payment in the popup window.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>SEO Optimized</h3>
+                    <p>Built-in SEO optimization ensures your content ranks higher in search results.</p>
                 </div>
-            </section>
-        </main>
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>Professional Quality</h3>
+                    <p>AI-powered writing that matches the quality of experienced content creators.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>WordPress Integration</h3>
+                    <p>Seamlessly publish your generated articles directly to your WordPress site.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Customizable</h3>
+                    <p>Adjust tone, style, and focus to match your brand and audience.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Analytics Ready</h3>
+                    <p>Track performance and optimize your content strategy with built-in analytics.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Services Section -->
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>ArticleMaster</h3>
+                    <p>Transform YouTube videos into comprehensive articles with AI-powered analysis and professional writing.</p>
+                    <div class="service-features">
+                        <span>• 4 articles/week (Pro)</span>
+                        <span>• Unlimited articles (Premium)</span>
+                        <span>• WordPress integration</span>
+                    </div>
+                    <a href="payment/?project=articlemaster" class="service-button">Get ArticleMaster</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Legacy App</h3>
+                    <p>Access our previous generation of content creation tools with enhanced features.</p>
+                    <div class="service-features">
+                        <span>• All legacy features</span>
+                        <span>• Priority support</span>
+                        <span>• Advanced customization</span>
+                    </div>
+                    <a href="payment/?project=app" class="service-button">Get Legacy App</a>
+                </div>
+                <div class="service-card coming-soon">
+                    <div class="service-icon">🔮</div>
+                    <h3>Future Services</h3>
+                    <p>Exciting new AI-powered content creation tools coming soon.</p>
+                    <div class="service-features">
+                        <span>• Social media content</span>
+                        <span>• Multi-language support</span>
+                        <span>• Advanced analytics</span>
+                    </div>
+                    <div class="coming-soon-badge">Coming Soon</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Ready to Transform Your Content Creation?</h2>
+            <p>Join thousands of creators who trust Scolink to power their content strategy.</p>
+            <div class="cta-buttons">
+                <a href="pricing.html" class="cta-button primary">View Plans</a>
+                <a href="mailto:contact@scolink.ink" class="cta-button secondary">Contact Us</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
         <footer class="footer">
             <p>&copy; 2025 Scolink. All rights reserved.</p>
             <div class="footer-links">
-                <a href="#" onclick="showRefundPolicy()">Refund Policy</a>
-                <a href="#" onclick="showTerms()">Terms of Service</a>
+                <a href="terms.html">Terms and Conditions</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="refund.html">Refund Policy</a>
+                <a href="pricing.html">Pricing</a>
                 <a href="mailto:contact@scolink.ink">Contact Support</a>
             </div>
         </footer>
     </div>
 
-    <!-- Refund Policy Modal -->
-    <div id="refundModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('refundModal')">&times;</span>
-            <h2>Refund Policy</h2>
-            <p>We offer a 14-day money-back guarantee for all our services. If you're not satisfied with your purchase, contact us within 14 days for a full refund.</p>
-        </div>
-    </div>
+    <style>
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            border-radius: var(--border-radius-lg);
+            margin: 40px 0;
+        }
 
-    <!-- Terms Modal -->
-    <div id="termsModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('termsModal')">&times;</span>
-            <h2>Terms of Service</h2>
-            <p>By using our services, you agree to our terms and conditions. All payments are processed securely through Paddle.</p>
-        </div>
-    </div>
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
 
-    <script src="config.js"></script>
-    <script src="script.js"></script>
+        .highlight {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0 12px;
+            border-radius: 6px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .hero-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mockup {
+            width: 300px;
+            height: 200px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            padding: 20px;
+        }
+
+        .screen {
+            background: var(--surface-color);
+            border-radius: 8px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-preview {
+            text-align: center;
+            color: var(--text-primary);
+        }
+
+        .content-preview h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: var(--text-primary);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature-card {
+            background: var(--background-color);
+            padding: 40px 30px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: var(--surface-color);
+            border-radius: var(--border-radius-lg);
+            margin: 40px 0;
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: var(--text-primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .service-card {
+            background: var(--background-color);
+            padding: 40px 30px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        .service-card p {
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .service-features {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .service-features span {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .service-button {
+            display: inline-block;
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .service-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .coming-soon-badge {
+            background: var(--warning-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* CTA Buttons */
+        .cta-button {
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            display: inline-block;
+        }
+
+        .cta-button.primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .cta-button.primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .cta-button.secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding: 60px 20px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .features-grid,
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .features h2,
+            .services h2 {
+                font-size: 2rem;
+            }
+
+            .mockup {
+                width: 250px;
+                height: 150px;
+            }
+        }
+    </style>
 </body>
 </html>

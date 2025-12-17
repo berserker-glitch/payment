@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Scolink</title>
+    <link rel="stylesheet" href="payment/styles.css">
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+    <script src="payment/config.js"></script>
+    <script src="payment/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>Scolink Pricing</h1>
+                <p class="subtitle">Choose the perfect plan for your content creation needs</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Project Selection -->
+            <section class="project-selection">
+                <h2>Our Services</h2>
+                <div class="project-grid">
+                    <div class="project-card" onclick="window.location.href='?project=articlemaster'">
+                        <div class="project-icon">📝</div>
+                        <h3>ArticleMaster</h3>
+                        <p>AI-powered article generation from YouTube videos</p>
+                        <span class="domain">articlealchemist.scolink.ink</span>
+                        <div class="project-pricing">
+                            <span class="price">$8-12/month</span>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="window.location.href='?project=app'">
+                        <div class="project-icon">🚀</div>
+                        <h3>Legacy App</h3>
+                        <p>Your previous application</p>
+                        <span class="domain">app.scolink.ink</span>
+                        <div class="project-pricing">
+                            <span class="price">$8-12/month</span>
+                        </div>
+                    </div>
+                    <div class="project-card coming-soon">
+                        <div class="project-icon">🔮</div>
+                        <h3>Future Projects</h3>
+                        <p>Coming soon...</p>
+                        <span class="domain">*.scolink.ink</span>
+                        <div class="project-pricing">
+                            <span class="price">TBA</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detailed Pricing Comparison -->
+            <section class="pricing-comparison">
+                <h2>Detailed Pricing Comparison</h2>
+
+                <div class="pricing-table">
+                    <div class="pricing-header">
+                        <div class="feature-column">Features</div>
+                        <div class="plan-column">
+                            <h3>Free</h3>
+                            <div class="price">$0</div>
+                            <div class="period">Forever</div>
+                        </div>
+                        <div class="plan-column featured">
+                            <h3>Pro</h3>
+                            <div class="price">$8</div>
+                            <div class="period">/month</div>
+                            <div class="badge">Popular</div>
+                        </div>
+                        <div class="plan-column">
+                            <h3>Premium</h3>
+                            <div class="price">$12</div>
+                            <div class="period">/month</div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-body">
+                        <div class="feature-row">
+                            <div class="feature-name">Articles per week</div>
+                            <div class="feature-value">1</div>
+                            <div class="feature-value">4</div>
+                            <div class="feature-value">Unlimited</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">WordPress integration</div>
+                            <div class="feature-value">❌</div>
+                            <div class="feature-value">✅</div>
+                            <div class="feature-value">✅</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">AI quality</div>
+                            <div class="feature-value">Basic</div>
+                            <div class="feature-value">Enhanced</div>
+                            <div class="feature-value">Premium</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Custom preferences</div>
+                            <div class="feature-value">❌</div>
+                            <div class="feature-value">❌</div>
+                            <div class="feature-value">✅</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">SEO optimization</div>
+                            <div class="feature-value">❌</div>
+                            <div class="feature-value">❌</div>
+                            <div class="feature-value">✅</div>
+                        </div>
+                        <div class="feature-row">
+                            <div class="feature-name">Priority support</div>
+                            <div class="feature-value">❌</div>
+                            <div class="feature-value">✅</div>
+                            <div class="feature-value">✅</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Can I change plans anytime?</h3>
+                        <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is there a free trial?</h3>
+                        <p>Yes, all accounts start with our free plan. You can test the service before upgrading.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What payment methods do you accept?</h3>
+                        <p>We accept all major credit cards, PayPal, and other payment methods through our secure processor.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I cancel anytime?</h3>
+                        <p>Absolutely. Cancel anytime with no penalties. You'll retain access until the end of your billing period.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <h2>Ready to Get Started?</h2>
+                <p>Join thousands of content creators who trust Scolink for their article generation needs.</p>
+                <div class="cta-buttons">
+                    <a href="payment/" class="cta-button primary">Choose Your Plan</a>
+                    <a href="mailto:contact@scolink.ink" class="cta-button secondary">Contact Sales</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Scolink. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="../terms.html">Terms and Conditions</a>
+                <a href="../privacy.html">Privacy Policy</a>
+                <a href="../refund.html">Refund Policy</a>
+                <a href="mailto:contact@scolink.ink">Contact Support</a>
+            </div>
+        </footer>
+    </div>
+
+    <style>
+        .project-pricing {
+            margin-top: 15px;
+        }
+        .project-pricing .price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .pricing-comparison {
+            margin: 60px 0;
+        }
+
+        .pricing-table {
+            background: var(--background-color);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .pricing-header {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            background: var(--surface-color);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .feature-column, .plan-column {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .plan-column.featured {
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+        }
+
+        .plan-column.featured .price {
+            color: white;
+        }
+
+        .badge {
+            background: white;
+            color: var(--primary-color);
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 8px;
+            display: inline-block;
+        }
+
+        .pricing-body .feature-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .pricing-body .feature-row:last-child {
+            border-bottom: none;
+        }
+
+        .feature-name {
+            padding: 15px 20px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .feature-value {
+            padding: 15px 20px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .faq-section {
+            margin: 60px 0;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .faq-item {
+            background: var(--background-color);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .faq-item h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .faq-item p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+            color: white;
+            padding: 60px 20px;
+            border-radius: var(--border-radius-lg);
+            margin: 60px 0;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            border-radius: var(--border-radius);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .cta-button.primary {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        .cta-button.primary:hover {
+            background: var(--surface-color);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-button.secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .pricing-header, .pricing-body .feature-row {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-header {
+                display: none;
+            }
+
+            .pricing-body .feature-row {
+                border: 1px solid var(--border-color);
+                margin-bottom: 10px;
+                border-radius: var(--border-radius);
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</body>
+</html>
