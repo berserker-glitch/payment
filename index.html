@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway - Scolink</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <h1>Payment Gateway</h1>
+                <p class="subtitle">Secure payments for all Scolink services</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Project Selection -->
+            <section class="project-selection">
+                <h2>Select Your Service</h2>
+                <div class="project-grid">
+                    <div class="project-card" data-project="articlemaster">
+                        <div class="project-icon">📝</div>
+                        <h3>ArticleMaster</h3>
+                        <p>AI-powered article generation from YouTube videos</p>
+                        <span class="domain">articlealchemist.scolink.ink</span>
+                    </div>
+                    <div class="project-card" data-project="app">
+                        <div class="project-icon">🚀</div>
+                        <h3>Legacy App</h3>
+                        <p>Your previous application</p>
+                        <span class="domain">app.scolink.ink</span>
+                    </div>
+                    <div class="project-card coming-soon">
+                        <div class="project-icon">🔮</div>
+                        <h3>Future Projects</h3>
+                        <p>Coming soon...</p>
+                        <span class="domain">*.scolink.ink</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Plan Selection -->
+            <section class="plan-selection" id="planSelection" style="display: none;">
+                <h2 id="planTitle">Choose Your Plan</h2>
+                <div class="plan-grid" id="planGrid">
+                    <!-- Plans will be populated by JavaScript -->
+                </div>
+                <button class="back-btn" onclick="showProjectSelection()">← Back to Services</button>
+            </section>
+
+            <!-- Payment Status -->
+            <section class="payment-status" id="paymentStatus" style="display: none;">
+                <div class="status-content">
+                    <h2>Processing Payment...</h2>
+                    <div class="spinner"></div>
+                    <p>Please complete your payment in the popup window.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Scolink. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" onclick="showRefundPolicy()">Refund Policy</a>
+                <a href="#" onclick="showTerms()">Terms of Service</a>
+                <a href="mailto:contact@scolink.ink">Contact Support</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Refund Policy Modal -->
+    <div id="refundModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('refundModal')">&times;</span>
+            <h2>Refund Policy</h2>
+            <p>We offer a 30-day money-back guarantee for all our services. If you're not satisfied with your purchase, contact us within 30 days for a full refund.</p>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="termsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('termsModal')">&times;</span>
+            <h2>Terms of Service</h2>
+            <p>By using our services, you agree to our terms and conditions. All payments are processed securely through Paddle.</p>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
